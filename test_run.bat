@@ -1,0 +1,9 @@
+@echo off
+cd backend
+echo Creating Virtual Environment...
+python -m venv venv
+call venv\Scripts\activate
+echo Installing requirements...
+pip install -r requirements.txt
+echo Running test script...
+python run_test.py
